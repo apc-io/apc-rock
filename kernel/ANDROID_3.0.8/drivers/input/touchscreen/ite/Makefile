@@ -1,0 +1,2 @@
+obj-$(CONFIG_IT7260_SUPPORT) += IT7260_ts_i2c.o
+

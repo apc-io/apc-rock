@@ -1,0 +1,38 @@
+#
+# WMT Sensor configuration
+#
+menuconfig INPUT_SENSOR
+	bool "WMT Sensor"
+	help
+	  Say Y here, and a list of supported sensor will be displayed.
+	  This option doesn't affect the kernel.
+
+	  If unsure, say Y.
+
+if INPUT_SENSOR
+
+
+config WMT_SENSOR_KXTI9
+	tristate "KXTI9 G-Sensor Support"
+	depends on ARCH_WMT
+	help
+	  Say Y here if you have an WMT based board with g-sensor 
+	  attached to it.
+
+	  If unsure, say N.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called sensor_kxti9.
+
+config WMT_SENSOR_DMT08
+	tristate "DMT08 G-Sensor Support"
+	depends on ARCH_WMT
+	help
+	  Say Y here if you have an WMT based board with g-sensor 
+	  attached to it.
+
+	  If unsure, say N.
+
+	  To compile this driver as a module, choose M here: the
+	  module will be called sensor_dmt08.
+endif
