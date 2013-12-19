@@ -1,7 +1,7 @@
 VERSION = 3
 PATCHLEVEL = 0
 SUBLEVEL = 8
-EXTRAVERSION = _$(shell date +%y%m%d.%H%M)
+EXTRAVERSION =
 NAME = Sneaky Weasel
 
 # *DOCUMENTATION*
